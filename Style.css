@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: inline;
+    width: 100vw;
+    height: 7%;
+    background: rgba(0,0,0,0.7);
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100vw;
+    min-width: auto;
+    justify-content: center;
+}
+
+.navbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 800;
+}
+
+.navbar ul li:hover{
+    color: skyblue;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+section h1{
+    font-size: 4rem;
+}
+
+section p{
+    font-size: 1.5rem;
+    color: black;
+}
+
+section#home{
+    background: url('bonampak.jpeg') no-repeat center center/cover;
+}
+
+section#education{
+    background: url('caltech.jpg') no-repeat center center/cover;
+}
+
+section#publications{
+    background: url('IMG_1448.jpg') no-repeat center center/cover;
+}
+
+section#conferences{
+    background: url("dog-graphics-border-collie-896286.gif") no-repeat center center/cover;
+}
+
+section#researchinterests{
+    background: url('IMG_2580.JPG') no-repeat center center/cover;
+}
+
+section#movies{
+    background: url('jasper.jpg') no-repeat center center/cover;
+}
+
+section#possiblePHDprojects{
+    background: url('npf-thanksgiving-download.png') no-repeat center center/cover;
+}
+
+section#extra{
+    background: url('npf-218-wallpaper-old-faithful.jpg') no-repeat center center/cover;
+}
+
+.container h1{
+    color: black;
+    text-transform: uppercase;
+    display: block;
+    background: transparent;
+}
+
+.container2 .btn1{
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 lightblue;
+    transition: ease-out 0.4s;
+    font-size: 2rem;
+    outline: none;
+}
+
+.container2 .btn1:hover{
+    box-shadow: inset 300px 0 0 0 lightblue;
+    cursor: pointer;
+    color: #000;
+}
+
+.container2 .btn2{
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    transition: ease-out 0.4s;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid #42fbf2;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+
+.container2 .btn2:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.container2 .btn2::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #42fbf2;
+}
+
+.container2 .btn2:hover::before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.container2 .text1{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: transparent;
+    position: relative;
+    animation: text 3s 1;
+    color: white;
+}
+
+.container2 .text1-0{
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    color: white;
+}
+
+.container2 .text2{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container2 .text2-0{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container2 .text3{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container2 .text4{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container2 .text4-0{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container2 .text5{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container2 .text5-0{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container2 .text6{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container2 .text6-0{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container2 .text7{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container2 .text7-0{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+@keyframes text {
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
